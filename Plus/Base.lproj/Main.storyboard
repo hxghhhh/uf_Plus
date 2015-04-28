@@ -39,7 +39,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Progress" image="first" id="cbA-0t-RFb"/>
+                    <tabBarItem key="tabBarItem" title="Progress" image="Progress_ufPlus.png" id="cbA-0t-RFb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sWJ-z2-nDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,13 +85,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a9M-OW-1Fq">
-                                <rect key="frame" x="139" y="205" width="70" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" id="jBL-M7-cjx">
                                 <rect key="frame" x="0.0" y="17" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -115,52 +108,52 @@
                                 <color key="backgroundColor" red="0.0" green="0.66274509800000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jXa-58-YaQ">
+                                <rect key="frame" x="0.0" y="191" width="304" height="326"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Message" image="first" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Message" image="Message_ufPlus.png" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="tblViewMessages" destination="jXa-58-YaQ" id="wTa-5n-W9t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1684" y="924"/>
         </scene>
         <!--Exercise-->
-        <scene sceneID="cER-Sc-s9w">
+        <scene sceneID="doj-7E-Z2A">
             <objects>
-                <viewController id="CxL-MR-ahe" customClass="Exercise" customModule="Plus" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dNO-EE-Mnz">
+                <viewController id="9xL-IP-ZsX" customClass="Exercise" customModule="Plus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y1K-GT-88q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" contentMode="scaleToFill" id="hob-bk-5RW">
-                                <rect key="frame" x="0.0" y="-7" width="320" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.66274509800000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" id="qas-2j-7fP">
+                            <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" id="GDI-fA-r46">
                                 <rect key="frame" x="0.0" y="17" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" red="0.0" green="0.66274509800000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </textAttributes>
+                                <color key="barTintColor" red="0.1058823529" green="0.64313725489999995" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="Exercise" id="zNZ-O8-rTi">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="SWC-Jk-AK2">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Exercise" id="3RE-qs-uEj"/>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" id="s4L-kY-f6b">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.64313725489999995" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Exercise" image="first" selectedImage="first" id="n9z-db-QoB"/>
+                    <tabBarItem key="tabBarItem" title="Exercise" image="Exercise_ufPlus.png" id="oLr-WZ-NOP"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="53S-oC-onI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yAn-fn-0rS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1278" y="924"/>
+            <point key="canvasLocation" x="-1059" y="924"/>
         </scene>
         <!--Food-->
         <scene sceneID="fze-Fu-6DW">
@@ -197,7 +190,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Food" image="first" id="se8-nR-bov"/>
+                    <tabBarItem key="tabBarItem" title="Food" image="Food_ufPlus.png" id="se8-nR-bov"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8CD-1N-ICk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -207,14 +200,14 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController hidesBottomBarWhenPushed="YES" id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="CxL-MR-ahe" kind="relationship" relationship="viewControllers" id="JFo-pl-eKb"/>
+                        <segue destination="9xL-IP-ZsX" kind="relationship" relationship="viewControllers" id="QhB-4Z-1a7"/>
                         <segue destination="V4b-V9-Ud4" kind="relationship" relationship="viewControllers" id="B87-Dt-uOh"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="kbp-Jt-DEQ" kind="relationship" relationship="viewControllers" id="wco-OR-Hhe"/>
@@ -227,7 +220,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="Exercise_ufPlus.png" width="100" height="100"/>
+        <image name="Food_ufPlus.png" width="100" height="100"/>
+        <image name="Message_ufPlus.png" width="100" height="100"/>
+        <image name="Progress_ufPlus.png" width="100" height="100"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -9,11 +9,7 @@
 import UIKit
 
 class Exercise: UIViewController {
-    
-    //let myNavBar: UINavigationBar = UINavigationBar(frame: CGRectZero)
 
-    
-    //UITableView(frame: CGRectZero, style: .Grouped)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +26,6 @@ class Exercise: UIViewController {
         // change status bar colors to white letters
         return UIStatusBarStyle.LightContent
     }
-    
-    
 
     
    }

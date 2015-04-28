@@ -21,9 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabBar = UITabBar.appearance();
         var image : UIImage = UIImage(named: "tabBar_test")!;   // make sure picture is high quality 100x100 in Illustrator
         
+        tabBar.tintColor = UIColor.whiteColor(); // set color selected
+        
         //set colors for the tabItems
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState:.Normal) // Normal
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.blueColor()], forState:.Selected) // Selected
+        //UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState:.Normal) // Normal
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState:.Selected) // Selected
+       
+        
         
         tabBar.backgroundImage = image;
         
