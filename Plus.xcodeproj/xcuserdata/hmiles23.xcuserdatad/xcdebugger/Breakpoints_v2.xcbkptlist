@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Plus/Message.swift"
-            timestampString = "451881226.869738"
+            timestampString = "451882308.761768"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
