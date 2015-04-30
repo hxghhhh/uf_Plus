@@ -28,8 +28,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState:.Selected) // Selected
        
         
-        
+
         tabBar.backgroundImage = image;
+        
+        sleep(1); // extend splash screen
         
         return true
     }
