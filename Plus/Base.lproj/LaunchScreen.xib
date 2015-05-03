@@ -26,7 +26,7 @@
                     </variation>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" red="0.038562072989504953" green="0.60770976779414843" blue="0.63444138071895417" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.1333333333" green="0.64313725489999995" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
