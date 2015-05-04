@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>F794B0EA-9488-422F-AFC2-6719BEFB06C5</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Plus</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>8932780CCEE7C53FF6D34EF82ED0D97285801885</key>
 		<string>https://github.com/hamt3ch/uf_Plus.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Plus.xcodeproj</string>
+	<string>Plus.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8932780CCEE7C53FF6D34EF82ED0D97285801885</key>

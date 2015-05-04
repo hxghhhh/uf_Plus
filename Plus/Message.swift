@@ -11,6 +11,7 @@ import UIKit
 class Message: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var sentTableView: UITableView!
     
     @IBOutlet var myCellLabel: UILabel!
     
@@ -64,6 +65,47 @@ class Message: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         let row = indexPath.row
         println(swiftBlogs[row]) // NS Log(cell.text)
+    }
+    
+    @IBAction func InboxBtnPressed(sender: AnyObject) {
+        
+        self.displayInboxTableView() // display Inbox View
+        
+    }
+    
+    @IBAction func SentBtnPressed(sender: AnyObject) {
+    
+        self.displaySentTableView() // displaySentTableViw function
+        
+    }
+    
+    ///myViewMethods/////////////////////////
+    func displaySentTableView(){
+        
+        UITableView.animateWithDuration(0.2,
+            animations:{
+                self.sentTableView.alpha = 1 // display sentTable
+                self.tableView.alpha = 0     // hide
+                
+            }, completion: { (value: Bool) in
+                
+                
+        })
+        
+    }
+    
+    func displayInboxTableView(){
+        
+        UITableView.animateWithDuration(0.2,
+            animations:{
+                self.sentTableView.alpha = 0 // hide sentTable
+                self.tableView.alpha = 1     // display Inbox
+                
+            }, completion: { (value: Bool) in
+                
+                
+        })
+    
     }
     
     
