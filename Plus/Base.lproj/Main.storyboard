@@ -195,12 +195,21 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="composeBtnPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="FYg-8h-abQ"/>
+                                </connections>
                             </button>
+                            <tableView clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="K9q-f5-hcf">
+                                <rect key="frame" x="0.0" y="217" width="304" height="301"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Message" image="Message_ufPlus.png" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="composeTableView" destination="K9q-f5-hcf" id="mIU-X9-4G7"/>
                         <outlet property="sentTableView" destination="hO1-Ga-yRx" id="YrR-va-TuX"/>
                         <outlet property="tableView" destination="jXa-58-YaQ" id="rNE-xH-2mX"/>
                     </connections>

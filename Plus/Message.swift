@@ -12,6 +12,7 @@ class Message: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var tableView: UITableView!
     @IBOutlet var sentTableView: UITableView!
+    @IBOutlet var composeTableView: UITableView!
     
     @IBOutlet var myCellLabel: UILabel!
     
@@ -25,6 +26,7 @@ class Message: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         tableView.delegate = self       //connect tableview to delegates/DataSource
         tableView.dataSource = self
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -79,6 +81,13 @@ class Message: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
     }
     
+    @IBAction func composeBtnPressed(sender: AnyObject) {
+        
+        self.displayComposeTableView() //display composeTblView
+    
+    }
+    
+    
     ///myViewMethods/////////////////////////
     func displaySentTableView(){
         
@@ -86,6 +95,7 @@ class Message: UIViewController, UITableViewDataSource, UITableViewDelegate {
             animations:{
                 self.sentTableView.alpha = 1 // display sentTable
                 self.tableView.alpha = 0     // hide
+                self.composeTableView.alpha = 0
                 
             }, completion: { (value: Bool) in
                 
@@ -100,6 +110,7 @@ class Message: UIViewController, UITableViewDataSource, UITableViewDelegate {
             animations:{
                 self.sentTableView.alpha = 0 // hide sentTable
                 self.tableView.alpha = 1     // display Inbox
+                self.composeTableView.alpha = 0
                 
             }, completion: { (value: Bool) in
                 
@@ -107,6 +118,24 @@ class Message: UIViewController, UITableViewDataSource, UITableViewDelegate {
         })
     
     }
+    
+    func displayComposeTableView(){
+        
+        UITableView.animateWithDuration(0.2,
+            animations:{
+                self.sentTableView.alpha = 0 // hide sentTable
+                self.tableView.alpha = 0     // display Inbox
+                self.composeTableView.alpha = 1
+                
+            }, completion: { (value: Bool) in
+                
+                
+        })
+
+        
+    }
+    
+    //func changeMessageTableView(String toDisplay){}
     
     
 }
